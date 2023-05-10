@@ -1,0 +1,19 @@
+{
+  "name": "15-globe-three-js",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^4.1.0"
+  },
+  "dependencies": {
+    "gsap": "3.6.1",
+    "three": "0.126.1",
+    "vite-plugin-string": "^1.2.1"
+  }
+}

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Exo+2:wght@700&family=Lato&display=swap");
+      body {
+        margin: 0;
+        -webkit-font-smoothing: antialiased;
+        overflow: hidden;
+      }
+
+      #stars {
+        position: absolute;
+        z-index: -1;
+        width: 100% !important;
+      }
+
+      .flex {
+        display: flex;
+        height: 100vh;
+      }
+
+      .leftWrapper {
+        width: 50%;
+        position: relative;
+        margin-left: 16rem;
+      }
+
+      .rightWrapper {
+        width: 50%;
+        position: relative;
+        margin-right: 4rem;
+      }
+
+      .leftSide {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+
+      h1 {
+        color: white;
+        font-size: 2.25rem;
+        line-height: 2.5rem;
+        font-family: "Exo 2", sans-serif;
+        text-transform: uppercase;
+        font-style: italic;
+      }
+
+      p {
+        color: #9ca3af;
+        font-size: 1.25rem;
+        line-height: 1.5rem;
+        font-family: "Lato", sans-serif;
+      }
+
+      a {
+        color: inherit;
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="flex">
+      <div class="leftWrapper leftSide">
+        <h1>challenging the flat earth society!</h1>
+        <p>
+          Created by <a href="https://tno.dev">Mohammed Sobhi</a> with
+          <a href="https://threejs.org/">ThreeJS</a>. <br />
+          based on a tutorial by
+          <a href="https://youtu.be/vM8M4QloVL0">Chris Courses</a>.
+        </p>
+      </div>
+      <div id="canvasContainer" class="rightWrapper">
+        <canvas id="globe"></canvas>
+      </div>
+      <canvas id="stars"></canvas>
+    </div>
+  </body>
+  <script type="module" src="/globe.js"></script>
+  <script type="module" src="/stars.js"></script>
+</html>
